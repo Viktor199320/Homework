@@ -1,0 +1,19 @@
+body {
+    background-color: lightblue;
+    }
+    
+    footer {
+        background-color: lightgrey;
+        font-size: 20px;
+    }
+
+    .text_centru {
+        text-align: center;
+        font-size: 20px;
+
+     }
+
+     .links {
+        font-size: 20px;
+        
+     }
