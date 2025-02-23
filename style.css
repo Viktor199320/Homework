@@ -1,19 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+
+
+header {
+    background-color: rgb(199, 219, 156);
+    
+    
+    }
+
 body {
-    background-color: lightblue;
+    background-color: rgb(255, 240, 189);
+    margin-top: 0%;
+    
+    
+    
     }
     
-    footer {
-        background-color: lightgrey;
+ footer {
+        background-color: rgb(252, 203, 239);
         font-size: 20px;
     }
 
-    .text_centru {
+    
+ .layout {
+    display: flex;
+    justify-content: center;
+ }
+
+.titlu {
+    font-family: Roboto Mono;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0%;
+    /* width: 80%; */
+    
+    
+
+}
+
+    #titlu2 {
+        margin-top: 0%;
+    }
+
+
+    .sections {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        
+    }
+    
+
+     .text_links {
+
+        font-family: Playwrite IT Moderna;
+        font-size: 18px;
         text-align: center;
-        font-size: 20px;
+     }
+
+     .imagini {
+        
+        border-radius: 15px;
+        width: 50vw;
+        /* width: 800px;
+        height: 450px; */
 
      }
 
-     .links {
-        font-size: 20px;
+     .media {
+        display: flex;
+        justify-items: center;
+        border-radius: 15px;
+        width: 50vw;
+        height: 28vw;
+        /* margin: 0 0 0 290px; */
+        
         
      }
+
+     @media (max-width: 600px) {
+        .imagini {
+         width: 80vw;
+         
+        }
+
+        .media {
+            width: 80vw;
+            height: 40vw;
+
+        }
+
+     }
+
+     
+
