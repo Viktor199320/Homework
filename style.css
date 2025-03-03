@@ -3,52 +3,101 @@
 
 
 header {
-    background-color: rgb(199, 219, 156);
+    background-color: rgb(234, 252, 196);
     
     
     }
 
 body {
-    background-color: rgb(255, 240, 189);
-    margin-top: 0%;
-    
-    
+    background-color: rgb(245, 240, 223);
+    margin: 0%;
     
     }
-    
- footer {
-        background-color: rgb(252, 203, 239);
+
+    footer {
+        background-color: rgb(234, 252, 196);
         font-size: 20px;
+        padding: 0 3px 0 5px;
     }
 
-    
- .layout {
-    display: flex;
-    justify-content: center;
- }
+    nav {
+        margin-left: 10px;
+        
+    }
 
-.titlu {
+    input[type=search] {
+     height: 35px;
+     border-radius: 10px;
+     padding-left: 5px;
+
+    }
+    
+    input[type=submit] {
+        width: 60px;
+        height: 35px;
+        border-radius: 10px;
+        border: 1px solid black;
+        
+    }
+
+    input[type=reset] {
+        width: 60px;
+        height: 35px;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+
+    input[type=datetime-local] {
+        width: 392px;
+    }
+
+
+    select {
+        width: 400px;
+    }
+
+    .radio_btn {
+        font-size: 25px;
+    }
+
+    .form {
+        height: 35px;
+        border-radius: 10px;
+        padding-left: 5px;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .titlu {
     font-family: Roboto Mono;
     font-weight: 400;
     text-align: center;
     margin-top: 0%;
-    /* width: 80%; */
     
     
-
-}
+    }
 
     #titlu2 {
         margin-top: 0%;
     }
 
 
-    .sections {
+    /* .sections {
         display: flex;
         justify-content: center;
         width: 80%;
+        } */
+
+    .descriere {
+        font-family: Playwrite IT Moderna;
+        font-size: 18px;
+        text-align: center;
+        padding: 0 5px;
         
-    }
+    
+        }
     
 
      .text_links {
@@ -58,31 +107,52 @@ body {
         text-align: center;
      }
 
-     .imagini {
-        
+     .img_centru {
+        display: flex;
+        justify-content: center;
+      }
+
+      .imagini {
+    
         border-radius: 15px;
-        width: 50vw;
+        width: 45vw;
+        cursor: pointer;
+        transform: scale(1);
+        transition: all 200ms;
         /* width: 800px;
         height: 450px; */
 
      }
 
+
+     .imagini:hover {
+        box-shadow: 15px 15px 15px rgb(160, 160, 160);
+        transform: scale(0.95);
+     }
+
      .media {
-        display: flex;
-        justify-items: center;
         border-radius: 15px;
         width: 50vw;
         height: 28vw;
-        /* margin: 0 0 0 290px; */
-        
         
      }
 
-     @media (max-width: 600px) {
+     .video_centru {
+
+        display: flex;
+        justify-content: center;
+
+     }
+
+
+
+     @media (max-width: 480px) {
+        
         .imagini {
          width: 80vw;
-         
-        }
+        
+         }
+
 
         .media {
             width: 80vw;
@@ -92,5 +162,34 @@ body {
 
      }
 
+     @media (min-width: 481px) {
+
+        .imagini {
+            width: 80vw;
+        }
+
+        .media {
+            width: 80vw;
+            height: 40vw;
+        }
+
+        }
+
+     @media (min-width: 769px) {
+
+     } 
+
+      @media (min-width: 1280px ) {
+        
+        .imagini {
+            width: 45vw;
+        }
+
+        .media {
+            width: 50vw;
+            height: 28vw;
+        }
+        
+     }
      
 
