@@ -4,10 +4,23 @@
 html, body {
     height: 100%;
     scroll-behavior: smooth;
+
+}
+
+.a {
+    position: absolute;
+    top: 215px;
+    left: 5px;
+    color: white;
+    
 }
 
 header {
-    background-color: rgb(234, 252, 196);
+    /* background-color: rgb(234, 252, 196); */
+    background-image: url('header_img.jpg');
+    height: 250px;
+    background-size: cover;
+    margin: 0%;
     
     
     }
@@ -25,19 +38,22 @@ body {
         padding-left: 10px;
         
     
-        
-    }
+        }
 
     nav {
-        margin-left: 10px;
+        display: flex;
+        justify-content: center;
         
-    }
+         }
 
     input[type=search] {
      height: 35px;
-     border-radius: 10px;
-     padding-left: 5px;
+     width: 500px;
+     border-radius: 20px;
+     padding-left: 20px;
      border: none;
+     margin-top: 200px;
+    
     }
     
     input[type=submit] {
@@ -97,15 +113,8 @@ body {
     }
 
     #titlu2 {
-        margin-top: 0%;
+        margin: 0%;
     }
-
-
-    /* .sections {
-        display: flex;
-        justify-content: center;
-        width: 80%;
-        } */
 
     .descriere {
         font-family: Playwrite IT Moderna;
@@ -122,14 +131,16 @@ body {
         font-family: Playwrite IT Moderna;
         font-size: 18px;
         text-align: center;
+        
      }
 
      .img_centru {
         display: flex;
         justify-content: center;
+        
       }
 
-      .imagini {
+     .imagini {
     
         border-radius: 15px;
         width: 45vw;
@@ -173,13 +184,13 @@ body {
         cursor: pointer;
         transform: scale(1);
         transition: all 200ms;
-        /* overflow: hidden; */
+        
        
         }
 
 
      .Parcul_Stefan {
-        background-image: url('Parcul\ stefan.jpg');
+        background-image: url('stefan-cel-mare-statue.jpg');
         width: 20vw;
         height: 25vw;
         border-radius: 8px;
@@ -233,6 +244,7 @@ body {
         border-radius: 15px;
         width: 50vw;
         height: 28vw;
+        cursor: pointer;
         
         
      }
@@ -260,11 +272,29 @@ body {
 
         }
 
+
+        .ads_img {
+            flex-direction: column;
+            gap: 20px;
+
+            section {
+                width: 100%;
+            }
+        }
         
 
-     }
+        .ads_style {
+            width: 100%;
+            height: 50vh;
+        }
 
-     @media (min-width: 481px) {
+        }
+
+     @media (max-width: 790px) {
+
+        input[type=search] {
+            width: 280px;
+        };
 
         .imagini {
             width: 80vw;
@@ -275,13 +305,30 @@ body {
             height: 40vw;
         }
 
+        .ads_img {
+            flex-direction: column;
+            gap: 20px;
+
+            section {
+                width: 100%;
+            }
+        }
         
 
+        .ads_style {
+            width: 100%;
+            height: 50vh;
         }
 
-     @media (min-width: 769px) {
+        
+        }
 
+        
+      @media (min-width: 769px) {
+
+        
      } 
+
 
       @media (min-width: 1280px ) {
         
@@ -294,6 +341,6 @@ body {
             height: 28vw;
         }
         
+
      }
      
-
