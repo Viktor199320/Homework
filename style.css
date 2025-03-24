@@ -32,7 +32,10 @@ body {
     }
 
     footer {
-        background-color: rgb(234, 252, 196);
+        /* background-color: rgb(234, 252, 196); */
+        background-image: url(image.jpg);
+        color: white;
+        background-size: cover;
         font-size: 20px;
         padding-top: 3px;
         padding-left: 10px;
@@ -76,13 +79,27 @@ body {
         width: 400px;
     }
 
-    .form {
+    textarea {
+        width: 395px;
+        height: 150px;
+        border-radius: 10px;
+        padding-left: 10px;
+    }
 
+    .forme {
+    
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .formular {
+    
         width: 400px;
         height: 35px;
         border-radius: 10px;
         border: none;
-        box-shadow: 5px 5px 5px rgb(160, 160, 160);
+        box-shadow: 5px 5px 5px rgb(7, 1, 1);
         text-align: center;
         
         
@@ -106,8 +123,9 @@ body {
     .titlu {
     font-family: Roboto Mono;
     font-weight: 400;
-    text-align: center;
+    text-align:  center;
     margin-top: 0%;
+    margin-bottom: 20px;
     
     
     }
@@ -123,7 +141,7 @@ body {
         padding: 0 5px;
         
     
-        }
+    }
     
 
      .text_links {
@@ -138,6 +156,7 @@ body {
         display: flex;
         justify-content: center;
         
+        
       }
 
      .imagini {
@@ -147,6 +166,7 @@ body {
         cursor: pointer;
         transform: scale(1);
         transition: all 200ms;
+        margin-top: 60px;
         /* width: 800px;
         height: 450px; */
 
@@ -298,6 +318,7 @@ body {
 
         .imagini {
             width: 80vw;
+            
         }
 
         .media {
