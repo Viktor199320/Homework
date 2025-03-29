@@ -43,6 +43,25 @@ body {
     
         }
 
+        .navbar ul{
+            list-style: none;
+            text-align: center;
+            margin-top: 35px;
+            font-size: 18px;
+            
+            a {
+                color: black;
+                /* text-decoration: none; */
+            }
+        }
+        
+        .navbar li {
+            
+            display: inline;
+            padding: 20px;
+         
+        } 
+
     nav {
         display: flex;
         justify-content: center;
@@ -149,9 +168,11 @@ body {
         font-family: Playwrite IT Moderna;
         font-size: 18px;
         text-align: center;
-        
+    
+
      }
 
+     
      .img_centru {
         display: flex;
         justify-content: center;
@@ -166,7 +187,7 @@ body {
         cursor: pointer;
         transform: scale(1);
         transition: all 200ms;
-        margin-top: 60px;
+        margin-top: 20px;
         /* width: 800px;
         height: 450px; */
 
@@ -195,7 +216,7 @@ body {
         }
 
      .catedrala {
-        background-image: url('catedrala.jpg');  
+        background-image: url('Catedrala/catedrala.jpg');  
         width: 20vw;
         height: 25vw;
         border-radius: 8px;
@@ -210,7 +231,7 @@ body {
 
 
      .Parcul_Stefan {
-        background-image: url('stefan-cel-mare-statue.jpg');
+        background-image: url('Gradina\ publica/stefan-cel-mare-statue.jpg');
         width: 20vw;
         height: 25vw;
         border-radius: 8px;
@@ -222,7 +243,7 @@ body {
      }
 
      .muzeu {
-        background-image: url('muzeu\ national.jpg');
+        background-image: url('Muzeul\ national/muzeu national.jpg');
         width: 20vw;
         height: 25vw;
         border-radius: 8px;
@@ -234,7 +255,7 @@ body {
      }
 
      .cojusna {
-        background-image: url('cojusna.jpg');
+        background-image: url('Cojusna/cojusna.jpg');
         width: 20vw;
         height: 25vw;
         border-radius: 8px;
@@ -318,13 +339,10 @@ body {
 
         .imagini {
             width: 80vw;
-            
+            height: 50vw;
+
         }
 
-        .media {
-            width: 80vw;
-            height: 40vw;
-        }
 
         .ads_img {
             flex-direction: column;

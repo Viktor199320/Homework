@@ -1,23 +1,23 @@
 
 let imagini = [
     {
-        imagine: 'https://descopera.md/wp-content/uploads/2022/11/IMG_20200501_154752-scaled.jpg',
-        link: "https://descopera.md/2022/11/17/duruitoarea-veche-si-lacul-costesti-stanca/",
+        imagine: 'Duruitoarea veche lacul costesti/Duruitoare veche.jpg',
+        // link: "https://descopera.md/2022/11/17/duruitoarea-veche-si-lacul-costesti-stanca/target=_blank",
     },
 
     {
-        imagine: 'https://descopera.md/wp-content/uploads/2022/11/milestii-mici.jpeg',
-        link: "https://descopera.md/2022/11/03/vinaria-milestii-mici/ target=_blank",
+        imagine: 'milestii mici/milestii-mici-beciul.jpg',
+        // link: "https://descopera.md/2022/11/03/vinaria-milestii-mici/ target=_blank",
     },
 
     {
-        imagine: 'epoca-de-piatra.jpg',
-        link: "https://descopera.md/2021/10/12/pivnitele-branesti/ target=_blank",
+        imagine: 'Epoca de piatra/epoca-de-piatra.jpg',
+        // link: "https://descopera.md/2021/10/12/pivnitele-branesti/ target=_blank",
     },
 
     {
-        imagine: 'manuc-bey-conac-hincesti-1024x578-1.jpg',
-        link: "https://descopera.md/2022/02/03/totul-despre-conacul-manuc-bei/ target=_blank",
+        imagine: 'Manuc bei/manuc-bey-conac.jpg',
+        // link: 'https:/descopera.md/2022/02/03/totul-despre-conacul-manuc-bei/'
     },
 ] 
 
@@ -36,10 +36,14 @@ function createProductCard(imagini1) {
     img_div.insertAdjacentElement('afterbegin', img )
     article.insertAdjacentElement('beforeend', img_div)
 
-    let link_div = document.createElement('div')
-    link_div.classList.add('text_links')
-    link_div.innerHTML = imagini1.link
-    article.insertAdjacentElement('beforeend', link_div)
+    let link = document.querySelector('.link')
+    link.classList.add('link')
+    img_div.insertAdjacentElement('afterend', link)
+
+    // let link_div = document.createElement('div')
+    // link_div.classList.add('text_links')
+    // link_div.innerHTML = imagini1.link
+    // article.insertAdjacentElement('beforeend', link_div)
 
     
     
