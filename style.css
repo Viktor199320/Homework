@@ -16,11 +16,7 @@ html, body {
 }
 
 header {
-    /* background-color: rgb(234, 252, 196); */
-    background-image: url('header_img1.jpg');
-    height: 250px;
-    background-size: cover;
-    margin: 0%;
+    background-color: rgb(234, 252, 196);
     
     
     }
@@ -97,26 +93,8 @@ body {
         width: 400px;
     }
 
-    textarea {
-        width: 395px;
-        height: 150px;
-        border-radius: 10px;
-        padding-left: 10px;
-    }
+    .form {
 
-    .forme {
-    
-        display: flex;
-        justify-content: center;
-
-        p {
-            text-shadow: 2px 2px 2px black;
-        }
-        
-    }
-
-    .formular {
-    
         width: 400px;
         height: 35px;
         border-radius: 10px;
@@ -191,8 +169,8 @@ body {
         cursor: pointer;
         transform: scale(1);
         transition: all 200ms;
-        margin-top: 20px;
-        
+        /* width: 800px;
+        height: 450px; */
 
      }
 
@@ -218,7 +196,7 @@ body {
         }
 
      .catedrala {
-        background-image: url('Catedrala/catedrala.jpg'); 
+        background-image: url('catedrala.jpg');  
         width: 20vw;
         height: 25vw;
         border-radius: 8px;
@@ -278,10 +256,28 @@ body {
         font-size: 20px;
         padding: 13px 13px;
         font-weight: bold;
-
         
-        }
+        
+        
+       
+     }
 
+     
+
+     .media {
+        border-radius: 15px;
+        width: 50vw;
+        height: 28vw;
+        
+        
+     }
+
+     .video_centru {
+
+        display: flex;
+        justify-content: center;
+
+     }
 
 
 
@@ -294,68 +290,46 @@ body {
          }
 
 
-        .ads_img {
-            flex-direction: column;
-            gap: 20px;
-
-
-            section {
-                width: 100%;
-    
-            }
-        }
-        
-
-        .ads_style {
-            width: 100%;
-            height: 50vh;
-        }
+        .media {
+            width: 80vw;
+            height: 40vw;
 
         }
 
+        .
 
+     }
 
-     @media (max-width: 769px) {
-
-        input[type=search] {
-            width: 280px;
-        };
+     @media (min-width: 481px) {
 
         .imagini {
-            width: 100vw;
-            height: 60vw;
-
+            width: 80vw;
         }
 
-
-        .ads_img {
-            flex-direction: column;
-            gap: 20px;
-
-            section {
-                width: 100%;
-            }
-        }
-        
-
-        .ads_style {
-            width: 100%;
-            height: 50vh;
+        .media {
+            width: 80vw;
+            height: 40vw;
         }
 
         
+
         }
 
+     @media (min-width: 769px) {
 
+     } 
 
       @media (min-width: 1280px ) {
         
         .imagini {
             width: 45vw;
-        
         }
 
+        .media {
+            width: 50vw;
+            height: 28vw;
+        }
         
-
      }
      
+
