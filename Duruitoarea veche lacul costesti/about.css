@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+    height: 100%;
+    scroll-behavior: smooth;
+
+}
+
+header {
+    background-image: url('/header_img1.jpg');
+    height: 250px;
+    background-size: cover;
+    margin: 0%;
+        
+}
+
+body {
+    background-color: rgb(245, 240, 223);
+    margin: 0%;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    
+     }
+
+input[type=search] {
+ height: 35px;
+ width: 500px;
+ border-radius: 20px;
+ padding-left: 20px;
+ border: none;
+ margin-top: 200px;
+
+}
+
+input[type=submit] {
+    width: 60px;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid black;
+    
+}
+
+
+.navbar ul{
+    list-style: none;
+    text-align: center;
+    margin-top: 35px;
+    font-size: 18px;
+    a {
+        color: black;
+        /* text-decoration: none; */
+    }
+}
+
+.navbar li {
+    
+    display: inline;
+    padding: 20px;
+ 
+}
+
+.titlu {
+    background-image: url(Duruitoarea2.jpg);
+    height: 500px;
+    background-size: cover;
+    position: relative;
+    margin-top: 25px;
+    
+    h1{
+        color: white;
+        position: absolute;
+        top: 60%;
+        font-size: 50px;
+        padding-left: 20px;
+        text-shadow: 4px 4px 4px black;
+
+    }
+
+}
+
+.section {
+
+    height: 400px;
+    width: 700px;
+    margin-left: 100px;
+    margin-top: 100px;
+    background-size: cover;
+
+    p {
+        font-family: Montserrat;
+        font-size: 20px;
+    }
+    h1 {
+        font-family: Montserrat;
+        font-size: 20px;
+    }
+
+    img {
+        width: 100%;
+        height: 45vw;
+        border-radius: 50px;
+        margin-top: 10px;
+    }
+
+}
+
+.vid_cojusna {
+
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+
+    video {
+        border-radius: 15px;
+        width: 50vw;
+        height: 22.5vw;
+        cursor: pointer;
+    }
+
+    iframe {
+        border-radius: 15px;
+        width: 50vw;
+        height: 22.5vw;
+    
+    }
+    
+}
+
+
+.media {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+
+    video {
+        border-radius: 15px;
+        width: 50vw;
+        height: 28vw;
+        cursor: pointer;
+    }
+
+    iframe {
+        border-radius: 15px;
+        width: 50vw;
+        height: 28vw;
+    
+    }
+    
+}
+
+@media (max-width: 570px) {
+        
+
+    input[type=search] {
+        width: 280px;
+    }
+
+    header {
+        width: 100%;
+    }
+
+
+    .section {
+        padding-right: 30px;
+
+        img {
+            height: 70vw;
+        }
+    }
+
+    .media {
+        flex-direction: column;
+       
+        video {
+            width: 70vw;
+            height: 40vw;
+        }
+        iframe {
+            width: 70vw;
+            height: 40vw;
+        }
+
+    
+    }
+
+    .vid_cojusna {
+        flex-direction: column;
+
+        video {
+            width: 70vw;
+            height: 40vw;
+        }
+
+        iframe {
+            width: 70vw;
+            height: 40vw;
+        }
+
+
+    }
+}
+
+@media (max-width: 790px) {
+
+    .section
+
+     {
+        width: 80%;
+        img {
+            height: 70vw;
+        }
+    }
+
+    .media {
+        flex-direction: column;
+        video {
+            width: 70vw;
+            height: 40vw;
+        }
+        iframe {
+            width: 70vw;
+            height: 40vw;
+        }
+    }
+
+    .vid_cojusna {
+        flex-direction: column;
+        
+        video {
+            width: 70vw;
+            height: 40vw;
+        }
+
+        iframe {
+            width: 70vw;
+            height: 40vw;
+        }
+
+
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .section
+    img {
+        height: 70vw;
+    }
+}
