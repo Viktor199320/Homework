@@ -1,0 +1,69 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(240, 242, 245);
+  color: rgb(51, 51, 51);
+}
+
+header, footer {
+  background-color: rgb(101, 178, 255);
+  color: white;
+  text-align: center;
+  padding: 24px 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 32px auto;
+  padding: 32px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+h2 {
+  color: rgb(0, 64, 128);
+  margin-bottom: 16px;
+}
+
+.contact-info ul,
+.schedule ul,
+.social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info li,
+.schedule li,
+.social-links li {
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+a {
+  color: rgb(0, 64, 128);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.social-links a {
+  display: inline-block;
+  color: rgb(0, 64, 128);
+  background-color: rgb(230, 240, 255);
+  padding: 6px 13px;
+  border-radius: 5px;
+  margin-right: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.social-links a:hover {
+  background-color: rgb(204, 224, 255);
+}

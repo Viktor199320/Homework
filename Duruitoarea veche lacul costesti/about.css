@@ -20,6 +20,15 @@ body {
     
 }
 
+footer {
+  position: absolute;
+  background-color: rgb(101, 178, 255);
+  color: white;
+  text-align: center;
+  padding: 24px 0;
+  width: 100%;
+}
+
 nav {
     display: flex;
     justify-content: center;
