@@ -2,61 +2,66 @@
 let imagini = [
     {
         imagine: 'Duruitoarea veche lacul costesti/Duruitoare veche.jpg',
-        // link: "https://descopera.md/2022/11/17/duruitoarea-veche-si-lacul-costesti-stanca/target=_blank",
+        link: 'Duruitoarea veche lacul costesti/Duruitoarea.html',
+        titlu: 'Duruitoarea Veche și Lacul Costești-Stânca'
     },
 
     {
         imagine: 'milestii mici/milestii-mici-beciul.jpg',
-        // link: "https://descopera.md/2022/11/03/vinaria-milestii-mici/ target=_blank",
+        link: 'Milestii mici/Milestii.html',
+        titlu: 'Vinăria Mileștii Mici'
     },
 
     {
         imagine: 'Epoca de piatra/Epoca de piatra1.jpg',
-        // link: "https://descopera.md/2021/10/12/pivnitele-branesti/ target=_blank",
+        link: 'Epoca de piatra/Epoca.html',
+        titlu: 'Epoca de Piatră și Vinăria Brănești'
     },
 
     {
         imagine: 'Manuc bei/manuc-bey-conac.jpg',
-        // link: 'https:/descopera.md/2022/02/03/totul-despre-conacul-manuc-bei/'
+        link: 'Manuc bei/Manuc_bei.html',
+        titlu: 'Conacul Manuc Bei'
     },
-] 
+];
 
 function createProductCard(imagini1) {
+    let article = document.createElement('article');
 
-    let article = document.createElement('article')
+    let img_div = document.createElement('div');
+    img_div.classList.add('img_centru');
 
-    let img_div = document.createElement('div')
-    img_div.classList.add('img_centru')
+    let img = document.createElement('img');
+    img.classList.add('imagini');
+    img.setAttribute('src', imagini1.imagine);
 
-    let img = document.createElement('img')
-    img.classList.add('imagini')
-    img.setAttribute('src', imagini1.imagine)
+    img_div.appendChild(img);
+    article.appendChild(img_div);
 
+    //  Linkul este butonul
+    let link = document.createElement('a');
+    link.classList.add('destinatii', 'text_links');
+    link.href = imagini1.link;
+    link.textContent = imagini1.titlu;
 
-    img_div.insertAdjacentElement('afterbegin', img )
-    article.insertAdjacentElement('beforeend', img_div)
+    // Wrapper care centrează linkul
+    let linkWrapper = document.createElement('div');
+    linkWrapper.classList.add('link_wrapper')
+    linkWrapper.appendChild(link);
 
-    let link = document.querySelector('.link')
-    link.classList.add('link')
-    img_div.insertAdjacentElement('afterend', link)
+    article.appendChild(linkWrapper);
 
-    // let link_div = document.createElement('div')
-    // link_div.classList.add('text_links')
-    // link_div.innerHTML = imagini1.link
-    // article.insertAdjacentElement('beforeend', link_div)
-
-    
-    
-
-    return article
-
+    return article;
 }
 
-let sections = document.querySelector('.sections')
+let sections = document.querySelector('.sections');
 
-for (const imagini1 of imagini) {
-    let cardProdus = createProductCard(imagini1)
-    sections.insertAdjacentElement('beforeend', cardProdus)
+imagini.forEach((imagini1, index) => {
+    let cardProdus = createProductCard(imagini1);
+    sections.appendChild(cardProdus);
 
-}
-
+    // Adaugă clasa 'visible' după un mic delay pentru efectul de fade-in
+    setTimeout(() => {
+        cardProdus.classList.add('visible');
+    }, index * 400); // Delay între carduri
+})

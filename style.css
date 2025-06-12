@@ -143,24 +143,49 @@ body {
         margin: 0%;
     }
 
+    #firstp {
+        font-size: 22px;
+    }
+
     .descriere {
         font-family: Playwrite IT Moderna;
         font-size: 18px;
         text-align: center;
         padding: 0 5px;
         
-    
     }
-    
 
-     .text_links {
+    .link_wrapper {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    display: inline-block;
+    color: rgb(0, 64, 128);            
+    padding: 6px 13px;                 
+    background-color: rgb(101, 178, 255); 
+    border-radius: 10px;                      
+    transition: background-color 0.3s;
+    font-family: 'Playwrite IT Moderna', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+article {
+    text-align: center;
+}
 
+
+    .link_wrapper:hover {
+        background-color: rgb(204, 224, 255);
+        
+    }
+
+    .text_links {
         font-family: Playwrite IT Moderna;
         font-size: 18px;
         text-align: center;
-    
+        text-decoration: none;
 
-     }
+    }
+
 
      
      .img_centru {
@@ -179,8 +204,7 @@ body {
         transform: scale(1);
         transition: all 200ms;
         margin-top: 20px;
-        /* width: 800px;
-        height: 450px; */
+        
 
      }
 
@@ -302,17 +326,21 @@ body {
         box-shadow: 5px 5px 5px black;
     }
 
-    #CONTACTE {
-    
-        a {
-            color: white;
-        }
-    }
+    article {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+article.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 
 
-     @media (max-width: 482px) {
+    @media (max-width: 482px) {
 
     input[type=search]{
         width: 250px;
